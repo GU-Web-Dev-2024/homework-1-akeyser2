@@ -3,6 +3,33 @@
 <head>
     <title>Alex Keyser - CPSC 332</title>
 </head>
+<style>
+    body {
+        background-image: url('colm.webp');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h1 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    button {
+        margin-top: 10px;
+        height: 100px;
+        font-family: 'Comic Sans MS', cursive;
+    }
+    #olivares {
+        position: absolute;
+        z-index: 2; 
+        object-position: 0% 0%;
+        width: 90%;
+        height: 50%;
+        visibility: hidden;
+    }
+</style>
 <body>
     <h1>CPSC 332 - HW1</h1>
     <p>I hope to become <strong>more proficient</strong> all aspects of web dev in this class.
@@ -10,21 +37,31 @@
         I hope this class helps me become more proficient in the general web dev
         proccesses so I can do these things <em>in the future</em>.
     </p>
-    <img src="monke.jpg" alt="Little Guy" width="300" height="50">
+    <p>
+        <img src="smoil.jpg" alt="Little Guy" width="500" height="100">
+    </p>
+    <button onclick="jumpScare()"><strong>Olivares Jump Scare</strong></button>
+    <p2>
+        <img src="olivares.jpg" alt="a" id="olivares">
+    </p2>
+<script>
+    function jumpScare() {
+        document.getElementById("olivares").style.visibility="visible";
+        setTimeout(function() {
+            document.getElementById("olivares").style.visibility="hidden";
+        }, 1000);
+    }
+</script>
+
 </body>
 </html>
 
 <!-- 
 
-e. Add an image tag referencing, as a local source file, a meme or image of your 
-preference (possibly even relevant to the paragraph in bullet c).
-i. Make sure this file is in your project directory and included in version control for 
-your project.
+
 f. Make sure to save a copy of the image into the folder created in step 1.
 g. Add a link tag with a reference to an external website where you found the above 
 image. Make sure to include an appropriate link text describing the link.
-h. Add a style section to your HTML document and change one attribute of your page 
-(your choice), e.g., color, background, etc. using CSS styling.
 i. Add a button tag after your paragraph and a script section to the appropriate part of 
 your web page. Write a JavaScript function to dynamically produce some result (your 
 choice) on your web page, e.g., produce an alert, change a color or style of an element 
