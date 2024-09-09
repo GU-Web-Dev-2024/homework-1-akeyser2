@@ -11,26 +11,36 @@
         background-size: cover;
     }
     h1 {
-        color: white;
+        background: -webkit-linear-gradient(#FF0000, #0000FF);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     p {
-        color: white;
+        background: -webkit-linear-gradient(#FF0000, #0000FF);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     button {
+        background: -webkit-linear-gradient(#FFFF00, #FF00FF);
         margin-top: 10px;
         height: 100px;
         font-family: 'Comic Sans MS', cursive;
     }
+    a {
+        color: white;
+    }
     #olivares {
         position: absolute;
         z-index: 2; 
-        object-position: 0% 0%;
+        object-position: 0px 0px;
         width: 90%;
-        height: 50%;
+        height: 90%;
         visibility: hidden;
     }
 </style>
 <body>
+    <img src="olivares.jpg" alt="a" id="olivares">
+
     <h1>CPSC 332 - HW1</h1>
     <p>I hope to become <strong>more proficient</strong> all aspects of web dev in this class.
         I want to make <em>different kinds</em> of websites from <strong>games</strong> to my own for my resume.
@@ -38,12 +48,13 @@
         proccesses so I can do these things <em>in the future</em>.
     </p>
     <p>
-        <img src="smoil.jpg" alt="Little Guy" width="500" height="100">
+        <a href="https://www.pinterest.com/pin/577797827212384271/">Smoil>
+            <img src="smoil.jpg" alt="Little Guy" width="500" height="100">
+        </a>
     </p>
     <button onclick="jumpScare()"><strong>Olivares Jump Scare</strong></button>
-    <p2>
-        <img src="olivares.jpg" alt="a" id="olivares">
-    </p2>
+    
+    
 <script>
     function jumpScare() {
         document.getElementById("olivares").style.visibility="visible";
